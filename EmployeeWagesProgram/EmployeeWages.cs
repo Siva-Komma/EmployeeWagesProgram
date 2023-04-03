@@ -18,17 +18,17 @@ namespace EmployeeWagesProgram
 
             Random random = new Random();
             int empCheck = random.Next(3);
-            if (empCheck == Emp_Present)
+            switch (empCheck)
             {
-                empHrs = 8;
-            }
-            else if (empCheck == Is_Part_Time)
-            {
-                empHrs = 4;
-            }
-            else
-            {
-                empHrs = 0;
+                case 0:
+                    empHrs = 8;
+                    break;
+                case 1:
+                    empHrs = 4;
+                    break;
+                case 2:
+                    empHrs = 0;
+                    break;
             }
             EmpWage = empHrs * Emp_Rate_Per_Hour;
             Console.WriteLine("Emp Wage: " + EmpWage);
