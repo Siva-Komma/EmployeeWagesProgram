@@ -41,10 +41,10 @@ namespace EmployeeWagesProgram
                 TotalEmpWage += EmpWage;
                 TotalEmpHrs += empHrs;
                 Console.WriteLine("Emp Hrs: " + TotalEmpHrs);
-                Console.WriteLine("Emp Wage: " + EmpWage);
+                Console.WriteLine("Emp Wages: " + EmpWage);
             }
             TotalEmpWage = TotalEmpHrs * Emp_Rate_Per_Hour;
-            Console.WriteLine("Toayal Emp Wage: " + TotalEmpWage);
+            Console.WriteLine("Toayal Emp Wages: " + TotalEmpWage);
         }
     }
 }
